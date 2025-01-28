@@ -57,3 +57,10 @@ nav a:hover {
     color: #333;
     margin-top: 10px;
 }
+
+.logo {
+    width: 200px;  /* Ajuste para o tamanho desejado */
+    height: auto;  /* Mantém a proporção da imagem */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
