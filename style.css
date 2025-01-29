@@ -14,7 +14,7 @@ body {
 
 /* Estilos para o menu de navegação */
 nav {
-    background-color: #333;
+    background-color: #a3f1ff;
     padding: 10px;
     text-align: center;
 }
@@ -63,4 +63,55 @@ nav a:hover {
     height: auto;  /* Mantém a proporção da imagem */
     display: block;
     margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+/* Estilo base para os botões */
+.comprar-btn {
+    background-color: #28a745;  /* Cor de fundo verde */
+    color: white;               /* Cor do texto branca */
+    border: none;               /* Remove borda */
+    padding: 10px 20px;         /* Espaçamento interno */
+    font-size: 16px;            /* Tamanho da fonte */
+    cursor: pointer;           /* Cursor de mão ao passar o mouse */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
+    border-radius: 5px;         /* Bordas arredondadas */
+}
+
+/* Efeito de hover no botão */
+.comprar-btn:hover {
+    transform: scale(1.1);      /* Aumenta o tamanho do botão */
+    background-color: #218838;  /* Torna o verde um pouco mais escuro */
+}
+
+button {
+    background-color: #28a745; /* Verde padrão */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #218838; /* Verde escuro ao passar o mouse */
+    transform: scale(1.05); /* Efeito de leve aumento */
+}
+
+button:active {
+    background-color: #1e7e34; /* Verde ainda mais escuro ao clicar */
+    transform: scale(0.95); /* Efeito de clique */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #a3f1ff;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }

@@ -8,7 +8,7 @@ body {
 
 /* Barra de navegação */
 header {
-    background-color: #333;
+    background-color: #9fe0ff;
     padding: 10px;
     position: fixed;
     width: 100%;
@@ -98,7 +98,7 @@ input:focus {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #a3f1ff;
     color: white;
     position: fixed;
     width: 100%;

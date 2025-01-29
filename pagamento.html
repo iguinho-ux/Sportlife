@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagamento</title>
+    <title>Pagamento - Sportlife</title>
+    
     <link rel="stylesheet" href="stylepagamento.css">
+
 </head>
 <body>
     <!-- Barra de navegação -->
@@ -12,37 +14,66 @@
         <nav>
             <a href="index.html"><b>Produtos</b></a>
             <a href="camiseta.html"><b>Camisetas</b></a>
-            <a href="calça.html"><b> Shorts</b></a>
+            <a href="calca.html"><b>Shorts</b></a>
             <a href="tenis.html"><b>Tênis</b></a>
-            <a href="boné.html"><b>Boné</b></a>
-            <a href="chinelo.html"><b>Chinelo Sandalia</b></a>
+            <a href="bone.html"><b>Boné</b></a>
+            <a href="chinelo.html"><b>Chinelo Sandália</b></a>
             <a href="pagamento.html"><b>Pagamento</b></a>
-           
         </nav>
     </header>
 
     <div class="form-container">
         <h1>Formulário de Pagamento</h1>
-        <form action="#" method="POST">
-            <label for="nome">Nome</label>
+        <form action="processa_pagamento.php" method="POST">
+            <label for="nome">Nome Completo</label>
             <input type="text" id="nome" name="nome" required>
 
-            <label for="cartao">Número do Cartão</label>
-            <input type="text" id="cartao" name="cartao" required>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
 
-            <label for="data">Data de Validade</label>
-            <input type="text" id="data" name="data" required>
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="cartao">Número do Cartão</label>
+            <input type="text" id="cartao" name="cartao" maxlength="16" required>
+
+            <label for="vencimento">Data de Vencimento</label>
+            <input type="month" id="vencimento" name="vencimento" required>
 
             <label for="cvv">CVV</label>
-            <input type="text" id="cvv" name="cvv" required>
+            <input type="password" id="cvv" name="cvv" maxlength="3" required>
 
-            <button type="submit" class="btn-submit">Enviar</button>
+            <label for="parcelas">Número de Parcelas</label>
+            <select id="parcelas" name="parcelas">
+                <option value="1">À vista</option>
+                <option value="2">2x sem juros</option>
+                <option value="3">3x sem juros</option>
+                <option value="4">4x com juros</option>
+                <option value="5">5x com juros</option>
+            </select>
+
+            <label>Forma de Pagamento</label>
+            <div class="payment-methods">
+                <input type="radio" id="credito" name="metodo_pagamento" value="credito" required>
+                <label for="credito">Cartão de Crédito</label>
+                
+                <input type="radio" id="debito" name="metodo_pagamento" value="debito">
+                <label for="debito">Cartão de Débito</label>
+
+                <input type="radio" id="pix" name="metodo_pagamento" value="pix">
+                <label for="pix">PIX</label>
+            </div>
+            
+            <button type="submit" class="btn-submit">Finalizar Pagamento</button>
         </form>
     </div>
 
     <!-- Rodapé -->
     <footer>
-        <p>&copy; 2025 Pizzaria Palazanato. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Sportlife. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
